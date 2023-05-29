@@ -1,0 +1,1 @@
+import{a2 as o,o as t,a as s,a0 as _,a1 as c,g as a}from"./index-028e0930.js";const n={},d=e=>(_("data-v-206e6013"),e=e(),c(),e),p={class:"notfound"},r=d(()=>a("h2",null,"404 NotFound",-1)),i=[r];function u(e,l){return t(),s("div",p,i)}const h=o(n,[["render",u],["__scopeId","data-v-206e6013"]]);export{h as default};
