@@ -25,13 +25,13 @@ export function useTimer(handler: Function, interval: number) {
   const initTimer = () => {
     timer = setInterval(() => {
       handler()
-    }, interval)
+    }, interval);
   }
 
   initTimer()
 
   onUnmounted(() => {
-    clearTimeout(timer)
+    clearTimeout(timer);
   })
 
   return {

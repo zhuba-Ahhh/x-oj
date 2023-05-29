@@ -41,7 +41,7 @@ import { ref, reactive, onBeforeMount, onBeforeUnmount } from 'vue'
 import { ElMessage } from 'element-plus'
 import { getNews } from '@/api/others/news'
 import type { newsParams } from '@/api/others/news'
-import { nowTimer } from '@/common/hooks/index'
+import { nowTimer } from '@/common/tools'
 import type { newsType } from '@/types/api'
 
 const state = reactive<{
@@ -88,7 +88,6 @@ const changeData = (type: number) => {
     params.origin = params.origin === '163' ? 'zhihu' : '163';
   }
   else params.index = `${Number(params.index) + type} `;
-  console.log(params, type);
   getData(params, type);
 }
 

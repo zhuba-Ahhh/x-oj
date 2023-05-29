@@ -151,7 +151,7 @@ const state = reactive({
   loginDialogVisible: false,
 })
 const handleSelect = (key: string, keyPath: string[]) => {
-  console.log(key, keyPath)
+  console.log(key, keyPath);
 }
 
 const goToHome = () => {
