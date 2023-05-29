@@ -41,7 +41,7 @@ import { ref, reactive, onBeforeMount, onBeforeUnmount } from 'vue'
 import { ElMessage } from 'element-plus'
 import { getNews } from '@/api/others/news'
 import type { newsParams } from '@/api/others/news'
-import { nowTimer } from '@/common/hooks/timer'
+import { nowTimer } from '@/common/hooks/index'
 import type { newsType } from '@/types/api'
 
 const state = reactive<{
@@ -119,7 +119,7 @@ onBeforeUnmount(() => {
 
     h1 {
       text-align: center;
-      margin-bottom: 10px;
+      margin-top: 10px;
 
       &::after {
         content: "";

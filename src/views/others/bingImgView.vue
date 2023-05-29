@@ -41,7 +41,7 @@
 <script setup lang="ts">
 import { ref, reactive, onBeforeMount } from 'vue'
 import { getBingImg } from '@/api/others/img'
-import { timeFormat } from '@/common/hooks/timer'
+import { timeFormat } from '@/common/hooks'
 import type { bingImg } from '@/types/api'
 
 const state = reactive<{
