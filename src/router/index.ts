@@ -1,22 +1,45 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import HomeView from '@/views/NavBarView/HomeView/index.vue';
+import bingImgView from '@/views/others/bingImgView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
+      redirect: '/home',
+    },
+    {
+      path: '/home',
       name: 'home',
       component: HomeView
     },
-    // {
-    //   path: '/about',
-    //   name: 'about',
-    //   // route level code-splitting
-    //   // this generates a separate chunk (About.[hash].js) for this route
-    //   // which is lazy-loaded when the route is visited.
-    //   component: () => import('../views/AboutView.vue')
-    // }
+    {
+      path: '/problem',
+      name: 'problem',
+      component: () => import('@/views/others/newsView.vue')
+    },
+    {
+      path: '/bing',
+      name: 'bing',
+      component: bingImgView
+    },
+    {
+      path: '/news',
+      name: 'news',
+      component: () => import('@/views/others/newsView.vue')
+    },
+    {
+      path: '/404',
+      name: 'PageNotExist',
+      component: () => import('@/views/notFoundView.vue')
+    },
+    {
+      path: '/:catchAll(.*)', // 不识别的path自动匹配404
+      name: 'notFound',
+      // redirect: '/404',
+      component: () => import('@/views/notFoundView.vue')
+    },
   ]
 })
 

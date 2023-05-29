@@ -1,4 +1,4 @@
-import { get } from './fetch'
+import { get } from '../fetch'
 import type { ResponseData } from '@/common/axios'
 import type { bingImg } from '@/types/api'
 
