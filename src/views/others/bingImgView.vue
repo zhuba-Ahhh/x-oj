@@ -69,6 +69,7 @@ const getImgData = () => {
     })
 
     const { data } = useRequest(() => getBingImg(nation));
+    console.log(data);
   })
 }
 
