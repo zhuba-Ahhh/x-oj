@@ -21,6 +21,7 @@
     "pinia": "^2.0.32",
     "vue": "^3.3.1",
     "vue-echarts": "^6.5.4",
+    "vue-hooks-plus": "^1.7.4",
     "vue-i18n": "^9.2.2",
     "vue-router": "^4.1.6"
   },
@@ -28,6 +29,7 @@
     "@rushstack/eslint-patch": "^1.2.0",
     "@types/node": "^18.14.2",
     "@vitejs/plugin-vue": "^4.2.2",
+    "@vue-hooks-plus/resolvers": "^1.2.4",
     "@vue/eslint-config-prettier": "^7.1.0",
     "@vue/eslint-config-typescript": "^11.0.2",
     "@vue/tsconfig": "^0.1.3",

@@ -11,6 +11,8 @@ import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 
+import { VueHooksPlusResolver } from '@vue-hooks-plus/resolvers'
+
 // import mocks from './src/mock/index';
 // import { viteMockServe } from 'vite-plugin-mock'
 
@@ -29,6 +31,7 @@ export default defineConfig({
         IconsResolver({
           prefix: 'Icon',
         }),
+        VueHooksPlusResolver(),
       ],
       dts: path.resolve(pathSrc, 'auto-imports.d.ts'),
     }),

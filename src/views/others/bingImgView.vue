@@ -41,6 +41,7 @@
 <script setup lang="ts">
 import { ref, reactive, onBeforeMount } from 'vue'
 import { getBingImg } from '@/api/others/img'
+import { useRequest } from 'vue-hooks-plus'
 import { timeFormat } from '@/common/tools'
 import type { bingImg } from '@/types/api'
 
@@ -66,6 +67,8 @@ const getImgData = () => {
       )
       state.imgs[index] = temp;
     })
+
+    // const { data } = useRequest(() => getBingImg(nation));
   })
 }
 
