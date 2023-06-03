@@ -68,7 +68,7 @@ const getImgData = () => {
       state.imgs[index] = temp;
     })
 
-    // const { data } = useRequest(() => getBingImg(nation));
+    const { data } = useRequest(() => getBingImg(nation));
   })
 }
 
